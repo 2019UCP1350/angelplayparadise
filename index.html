@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angel's Play Paradise</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit= no">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="animation.css">
+		<link  rel="stylesheet" href="footer.css">
+		<link  rel="stylesheet" href="sidenav.css">
+		<script type="text/javascript" src="nav.js">
+		</script>
+		<style>
+			.facilities{
+				height:28vw;
+				width:100%;
+				background-image: url("images/facilities_background.jpeg");
+				background-size:contain;
+				background-attachment:scroll;
+				perspective: 1000px;
+				box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+			}
+			.facilities-head{
+				font-family:Algerian;
+				font-size:3vw;
+				border-radius:0% 0% 100% 100%;
+				text-align:center;
+				font-family: Algerian;
+				width: 27%;
+				height:5vw;
+				color: rgb(1, 255, 255);
+				background-image: linear-gradient(to bottom,rgb(0, 0, 0),rgba(65, 37, 93, 0.8));
+				background-position: center;
+			}
+			.fac{
+				background-image: linear-gradient(to bottom,rgb(0, 0, 0),rgba(65, 37, 93, 0.8));
+				width:20%;
+				float:left;
+				margin-left:4%; 
+				margin-top:2%;
+				height:70%;
+				border-radius:20%;
+			}
+			.fac-inner{
+				height:100%;
+				width:100%;
+				border-radius:20%;
+				position:relative;
+				transition: transform 0.6s;
+				transform-style: preserve-3d;
+				box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+				cursor: pointer;
+			}
+			.fac:hover .fac-inner{
+				transform:rotateY(180deg);
+			}
+			.fac-inner-front{
+				width:100%;
+				height:100%;
+				border-radius:20%;
+				position:absolute;
+				background-repeat:no-repeat;
+				background-position:center;
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+			}
+			.fac-inner-back{
+				width:100%;
+				height:100%;
+				text-align:center;
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				transform: rotateY(180deg);
+				font-size:2vw;
+				font-family:Sofia;
+				color: rgb(1, 255, 255);
+				user-select: none;
+			}
+			.gallery{
+				background-color:rgb(0,0,0);
+				height:auto;
+				width:100%;
+				box-sizing:border-box;
+			}
+			.gallery-heading{
+				background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) );
+				font-size:2.7vw;
+				width:auto;
+				padding:0% 0% 0% 3%;
+				text-decoration:underline;
+				font-family:Algerian;
+				color:rgb(114,6,125);
+				}
+			.gallery-image{
+					padding:1% 2% 2% 0%;
+					height:20vw;
+					width:22%;
+				}
+		</style>
+	
+	</head>
+	<body >
+		<header >
+			<div class="heading">
+				<div style="display:table-cell;width:75%" >
+					<div class="ani">
+					<font class="head-main">
+						<i>Angel's Play Paradise School.</i>
+					</font>
+					<font class="head-main-1">
+						<i>(Feel like home Playway.)</i>
+					</font>
+					</div>
+				</div>
+				<div class="logo-container">
+					<img src="images/logo.png" class="logo" alt="logo">
+				</div> 
+			</div>
+			<div id="main" class="main">
+				<ul class="nav" id="navbar">	
+					<li class="navli"><a href="index.html"> <img class="img-home" src="images/home.png" alt="home">Home</a></li>
+					<li class="navli"><a href="admission.html"> Admissions</a></li>
+					<li style="float:right;" class="navli"><a href="#">About us</a></li>
+					<li class="dropdown navli"  >
+						<a href="javascript:void(0)" class="dropbtn">Events &nbsp &nbsp <i class="arrow down"></i></a>
+						<div class="dropdown-content">
+						  <a href="#">Lohri.</a>
+						  <a href="#">Christmas.</a>
+						  <a href="#">Holi.</a>
+						</div>
+					</li>
+					<li class="dropdown navli" >
+						<a href="javascript:void(0)" class="dropbtn">Activities &nbsp &nbsp <i class="arrow down"></i></a>
+						<div class="dropdown-content">
+						  <a href="#">Tumb Painting</a>
+						  <a href="#">Clay Modelling</a>
+						  <a href="#">Mike Activity</a>
+						</div>
+					</li>
+					<li class="dropdown navli">
+						<a href="javascript:void(0)" class="dropbtn">Home Work &nbsp &nbsp <i class="arrow down"></i></a>
+						<div class="dropdown-content">
+						  <a href="#">Pre-Nursery</a>
+						  <a href="#">Nursery</a>
+						  <a href="#">L.K.G</a>
+						</div> 
+					</li>
+					<div class="collapse-menu-container">
+						<li class="colapsable"  OnMouseOver="menu()" OnMouseOut="menureverse()" onClick="openNav()">
+							<div class="colapsable-menu">
+								<div class="menuicon" id="menu" ></div>
+								<div class="menuicon" id="menu" ></div>
+								<div class="menuicon" id="menu" ></div>
+							</div>
+						</li>
+						<li class="colapsable1" >
+							<div class="ani">
+							<font class="head-main">
+								<i>Angel's Play Paradise School.</i>
+							</font>
+							<font class="head-main-1">
+								<i>(Feel like home Playway.)</i>
+							</font>
+							</div>
+						</li>
+					</div>
+				</ul>
+			</div>
+			<ul class="sidenav" id="sidenav">
+				<li class="closebutton" ><a href="javascript:void(0)" onClick="closeNav()">&times;</a></li>
+				<li class="sidenavli"><a href="#"> <img class="img-home" src="images/home.png" alt="home">Home</a></li>
+				<li class="sidenavli"><a href="#"> Admissions</a></li>
+				<li class="sidedropdown" >
+					<a href="javascript:void(0)" class="sidedropbtn">Events &nbsp <i class="arrow down"></i></a>
+					<div class="sidedropdown-content">
+					<a href="#">Lohri.</a>
+					<a href="#">Christmas.</a>
+					<a href="#">Holi.</a>
+					</div>
+				</li>
+				<li class="sidedropdown" >
+					<a href="javascript:void(0)" class="sidedropbtn">Activities &nbsp <i class="arrow down"></i></a>
+					<div class="sidedropdown-content">
+						<a href="#">Tumb Painting</a>
+						<a href="#">Clay Modelling</a>
+						<a href="#">Mike Activity</a>
+					</div>
+				</li>
+				<li class="sidedropdown">
+					<a href="javascript:void(0)" class="sidedropbtn">Home Work &nbsp <i class="arrow down"></i></a>
+					<div class="sidedropdown-content">
+					<a href="#">Pre-Nursery</a>
+					<a href="#">Nursery</a>
+					<a href="#">L.K.G</a>
+					</div> 
+				</li>
+				<li  class="sidenavli"><a href="#">About us</a></li>
+			</ul>
+		</header>
+		<div class="slideshow">
+			<div class="Slides fade" >
+				<img src="images/ani1.jpg" class="img-1">
+			</div>
+			<div class="Slides fade">
+				<img src="images/christmas2018/1 (1).jpg" class="img-1">
+			</div>
+			<div class="Slides fade">
+				<img src="images/christmas2018/1 (11).jpg" class="img-1">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<div class="facilities">
+			<center>
+			<div class="facilities-head">
+				<u>Facilities:</u>
+			</div>
+			</center>
+			<div class="fac" >
+				<div style="background-color:transparent;" class="fac-inner" >
+					<div style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) ),url('images/bus.jpg');background-size:100%;" class="fac-inner-front">
+					</div>
+					<div class="fac-inner-back" style="padding-top:35%;">
+						<b>Van Service</b>
+					</div>
+				</div>
+			</div>
+			<div class="fac" >
+				<div style="background-color:transparent;" class="fac-inner" >
+					<div style="background-image:url('images/air-conditioner.jpg');background-size:cover;" class="fac-inner-front">
+					</div>
+					<div class="fac-inner-back" style="padding-top:28%;">
+						<b>Our School is <br>fully <br> Air-Conditioned</b>
+					</div>
+				</div>
+			</div>
+			<div class="fac">
+				<div style="background-color:transparent;" class="fac-inner" >
+					<div style="background-image:url('images/water.jpg');background-size:cover;" class="fac-inner-front">
+					</div>
+					<div class="fac-inner-back" style="padding-top:25%;">
+						<b>Filtered <br>R.O<br> Water</b>
+					</div>
+				</div>
+			</div>
+			<div class="fac">
+				<div style="background-color:transparent;" class="fac-inner" >
+					<div style="background-image:url('images/2.jpg');background-size:cover;" class="fac-inner-front">
+					</div>
+					<div class="fac-inner-back" style="padding-top:28%;">
+						<b>Modular Classroom <br>& <br>Toys.</b>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div style="background-color:transparent;width:100%;padding:2% 5% 2% 5%;box-sizing: border-box">
+			<div style="dispaly:table;outline: 5px solid purple;">
+				<div style="display:table-cell;background-color:yellow;width:50%;font-family:Sofia;font-size:1.8vw;">
+					<div style="background-color:white;">
+					<div style="font-family:Algerian;font-size:2.5vw;width:100%;text-align:center;margin-top:3%;text-decoration:underline;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) )">
+						Programes
+					</div>
+					</div>
+					<br>
+					<div style="padding:0% 10% 0% 10%;text-align:justify;">
+						Our kindergarten programs oblige the age gathering of child from 2-5 years with an 
+						educational program focussing on the comprehensive improvement of the your tiny tots:
+						<ul  style="line-height:200%;">
+							<li>Pre-Nursery&nbsp(1.75-2.5 years old)</li>
+							<li>Nursery&nbsp(2.5-3.5 years old)</li>
+							<li>L&nbsp.&nbspK&nbsp.&nbspG&nbsp(3.5-4.5 years old)</li>
+						</ul>
+					</div>
+				</div>
+				<div style="display:table-cell;">
+				</div>
+				<div style="display:table-cell;background-color:aqua;width:50%;font-family:Sofia;font-size:1.8vw;">
+					<div style="background-color:white;">
+					<div style="font-family:Algerian;font-size:2.5vw;width:100%;text-align:center;margin-top:3%;text-decoration:underline;background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) )">
+						Activities
+					</div>
+					</div>
+					<br>
+					<div style="padding:0% 10% 0% 10%;text-align:justify;">
+						Our kindergarten organises number of 
+						co-curricular exercises, Guarantees that the babies appreciate coming to class and learning new ideas.
+						A few of them are:
+						<ul  style="line-height:200%;">
+							<li>Story-Telling.</li>
+							<li>Hand-Painting</li>
+							<li>Clay-Modelling</li>
+							<li>Sports-Acitivity</li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<div class="gallery">
+			<div style="background-color:white;width:24vw;">
+				<div class="gallery-heading">
+					Image Gallery:
+				</div>
+			</div>
+			<div style="height:100%;width:auto;align-items:center;display:flex;">
+				<center>
+					<img src="images/christmas2018/1 (1).jpg" id="gallery1" class="gallery-image">
+					<img src="images/christmas2018/1 (2).jpg" id="gallery2" class="gallery-image">
+					<img src="images/christmas2018/1 (3).jpg" id="gallery3" class="gallery-image">
+					<img src="images/christmas2018/1 (4).jpg" id="gallery4" class="gallery-image" style="padding-right:0px;">
+				</center>
+			</div>
+		</div>
+		<script type="text/javascript" src="animation.js">
+		</script>
+		<script type="text/javascript" src="gallery.js">
+		</script>
+		<footer class="foot">
+			<center>
+				<div style="width:82%;dispaly:table">
+					<div style="line-height:200%;float:left;margin-left:2%;" class="content-span">
+						Follow Us On:<br>
+						&nbsp <a href="https://www.facebook.com/Jass5628/" class="fa fa-facebook"></a> &nbsp 
+						 <a href="#" class="fa fa-whatsapp"></a>
+						<br>	
+						&nbsp <a href="#" class="fa fa-instagram"></a>
+					</div>
+					<div style="line-height:140%;padding:0% 2% 0% 0%;"class="content-span">
+						Address:<br>
+						Satjot Nagar<br>
+						Block:C<br>
+						Dhandra Road<br>
+						Ludhiana,Punjab
+					</div>
+					<div class="content-span">
+						Contact Us On:<br>
+						<i style="font-size:2vw" class="fa fa-phone"></i>
+						9501181459<br>
+						Write Us On:<br>
+						<a href="mailto:angelplayparadise@gmail.com" style="text-decoration: none;color:white;">
+							<i style="font-size:1.8vw" class="fa">&#xf003;</i>AngelPlayParadise@gmail.com
+						</a>
+					</div>
+					<hr type="solid" width="100%">
+					<center>
+						<font style="font-size:1.7vw">
+							© Angel's Play Paradise.
+						</font>
+					</center>
+				</div>
+			</center>
+		</footer>
+	</body>
+</html>
