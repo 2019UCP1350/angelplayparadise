@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Angel's Play Paradise</title>
+		<title>Angel's Play Paradise/Home</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit= no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-		<link rel="stylesheet" href="fonts.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="header.css">
-		<link rel="stylesheet" href="animation.css">
 		<link  rel="stylesheet" href="footer.css">
 		<link  rel="stylesheet" href="sidenav.css">
-		<script type="text/javascript" src="nav.js">
-		</script>
+		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="gallery.css">
 		<style>
+			.carousel-inner img {
+				width: 100%;
+				height: 100%;
+			}
+			.bo{
+				border-color: rgba(255, 255, 0, 0.8) rgba(255,0, 0,1) rgba(0,255,255, 0.8) rgba(0,255,0,0.8);
+				border-style:groove;
+				border-width:1.3vw;
+				padding:0;
+			}
 			.facilities{
 				height:28vw;
 				width:100%;
@@ -81,140 +88,130 @@
 				color: rgb(1, 255, 255);
 				user-select: none;
 			}
-			.gallery{
-				background-color:rgb(0,0,0);
-				height:auto;
-				width:100%;
-				box-sizing:border-box;
-			}
-			.gallery-heading{
-				background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) );
-				font-size:2.7vw;
-				width:auto;
-				padding:0% 0% 0% 3%;
-				text-decoration:underline;
-				font-family:Algerian;
-				color:rgb(114,6,125);
-				}
-			.gallery-image{
-					padding:1% 2% 2% 0%;
-					height:20vw;
-					width:22%;
-				}
 		</style>
-	
 	</head>
-	<body >
-		<header >
-			<div class="heading">
-				<div style="display:table-cell;width:75%" >
-					<div class="ani">
-					<font class="head-main">
-						<i>Angel's Play Paradise School.</i>
-					</font>
-					<font class="head-main-1">
-						<i>(Feel like home Playway.)</i>
-					</font>
+	<body>
+		<div class="jumbotron text-center heading" style="padding-top:5px;padding-bottom:5px;margin-bottom:0px;">
+			<div class="contaiiner-fluid">
+				<div class="row">
+					<div class="col-10 ani" style="margin:0px;padding:0px;" id="main-head">
+						<font class="head-main" >
+							<i>Angel's Play Paradise School.</i>
+						</font>
+						<br>
+						<font class="head-main-1">
+							<i>(Feel like home Playway.)</i>
+						</font>
+					</div>
+					<div class="col-2 logo-container">
+						<img src="images/logo.png" class="logo float-right" alt="logo">
 					</div>
 				</div>
-				<div class="logo-container">
-					<img src="images/logo.png" class="logo" alt="logo">
-				</div> 
 			</div>
-			<div id="main" class="main">
-				<ul class="nav" id="navbar">	
-					<li class="navli"><a href="index.html"> <img class="img-home" src="images/home.png" alt="home">Home</a></li>
-					<li class="navli"><a href="admission.html"> Admissions</a></li>
-					<li style="float:right;" class="navli"><a href="#">About us</a></li>
-					<li class="dropdown navli"  >
-						<a href="javascript:void(0)" class="dropbtn">Events &nbsp &nbsp <i class="arrow down"></i></a>
-						<div class="dropdown-content">
-						  <a href="#">Lohri.</a>
-						  <a href="#">Christmas.</a>
-						  <a href="#">Holi.</a>
-						</div>
-					</li>
-					<li class="dropdown navli" >
-						<a href="javascript:void(0)" class="dropbtn">Activities &nbsp &nbsp <i class="arrow down"></i></a>
-						<div class="dropdown-content">
-						  <a href="#">Tumb Painting</a>
-						  <a href="#">Clay Modelling</a>
-						  <a href="#">Mike Activity</a>
-						</div>
-					</li>
-					<li class="dropdown navli">
-						<a href="javascript:void(0)" class="dropbtn">Home Work &nbsp &nbsp <i class="arrow down"></i></a>
-						<div class="dropdown-content">
-						  <a href="#">Pre-Nursery</a>
-						  <a href="#">Nursery</a>
-						  <a href="#">L.K.G</a>
-						</div> 
-					</li>
-					<div class="collapse-menu-container">
-						<li class="colapsable"  OnMouseOver="menu()" OnMouseOut="menureverse()" onClick="openNav()">
-							<div class="colapsable-menu">
-								<div class="menuicon" id="menu" ></div>
-								<div class="menuicon" id="menu" ></div>
-								<div class="menuicon" id="menu" ></div>
-							</div>
-						</li>
-						<li class="colapsable1" >
-							<div class="ani">
-							<font class="head-main">
-								<i>Angel's Play Paradise School.</i>
-							</font>
-							<font class="head-main-1">
-								<i>(Feel like home Playway.)</i>
-							</font>
-							</div>
-						</li>
-					</div>
-				</ul>
-			</div>
-			<ul class="sidenav" id="sidenav">
-				<li class="closebutton" ><a href="javascript:void(0)" onClick="closeNav()">&times;</a></li>
-				<li class="sidenavli"><a href="#"> <img class="img-home" src="images/home.png" alt="home">Home</a></li>
-				<li class="sidenavli"><a href="#"> Admissions</a></li>
-				<li class="sidedropdown" >
-					<a href="javascript:void(0)" class="sidedropbtn">Events &nbsp <i class="arrow down"></i></a>
-					<div class="sidedropdown-content">
-					<a href="#">Lohri.</a>
-					<a href="#">Christmas.</a>
-					<a href="#">Holi.</a>
+		</div>
+		<div id="main" >
+			<ul class="nav" id="navbar">	
+				<li class="navli"><a href="index.html"> <img class="img-home" src="images/home.png" alt="home" >&nbsp Home</a></li>
+				<li class="dropdown navli"  >
+					<a href="javascript:void(0)" class="dropbtn">Admissions &nbsp <i class="arrow down"></i></a>
+					<div class="dropdown-content">
+					  <a href="admission.html">Admission Process</a>
+					  <a href="admission.html">F.A.Q</a>
+					  <a href="admission.html">Rules &amp Regulation</a>
 					</div>
 				</li>
-				<li class="sidedropdown" >
-					<a href="javascript:void(0)" class="sidedropbtn">Activities &nbsp <i class="arrow down"></i></a>
-					<div class="sidedropdown-content">
-						<a href="#">Tumb Painting</a>
-						<a href="#">Clay Modelling</a>
-						<a href="#">Mike Activity</a>
+				<li class="dropdown navli"  >
+					<a href="javascript:void(0)" class="dropbtn">Events &nbsp <i class="arrow down"></i></a>
+					<div class="dropdown-content">
+					  <a href="events.html">Lohri.</a>
+					  <a href="events.html">Christmas.</a>
+					  <a href="events.html">Many More</a>
 					</div>
 				</li>
-				<li class="sidedropdown">
-					<a href="javascript:void(0)" class="sidedropbtn">Home Work &nbsp <i class="arrow down"></i></a>
-					<div class="sidedropdown-content">
-					<a href="#">Pre-Nursery</a>
-					<a href="#">Nursery</a>
-					<a href="#">L.K.G</a>
+				<li class="dropdown navli" >
+					<a href="javascript:void(0)" class="dropbtn">Activities &nbsp <i class="arrow down"></i></a>
+					<div class="dropdown-content">
+					  <a href="activities.html">Thumb Painting</a>
+					  <a href="activities.html">Clay Modelling</a>
+					  <a href="activities.html">Mike Activity</a>
+					  <a href="activities.html">Many More</a>
+					</div>
+				</li>
+				<li class="dropdown navli">
+					<a href="javascript:void(0)" class="dropbtn">Home Work &nbsp <i class="arrow down"></i></a>
+					<div class="dropdown-content">
+					  <a href="homework.html">Pre-Nursery</a>
+					  <a href="homework.html">Nursery</a>
+					  <a href="homework.html">L.K.G</a>
 					</div> 
 				</li>
-				<li  class="sidenavli"><a href="#">About us</a></li>
+				<li class="navli" ><a href="javascript:void(0)" data-toggle="popover"  data-content="Summer: 9:00 a.m to 12:00 noon &nbsp &nbsp  Winter: 10:00a.m to 1:00p.m"  data-placement="bottom" data-trigger="hover" >Timings</a></li>
+				<li class="navli"  ><a href="contactus.html">Contact Us</a></li>
+				<li class="navli"  ><a href="aboutus.html">About us</a></li>
+				<div class="collapse-menu-container">
+					<div class="colapsable"  OnMouseOver="menu()" OnMouseOut="menureverse()" onClick="openNav()">
+						<div class="colapsable-menu">
+							<div class="menuicon" id="menu" ></div>
+							<div class="menuicon" id="menu" ></div>
+							<div class="menuicon" id="menu" ></div>
+						</div>
+					</div>
+				</div>
 			</ul>
-		</header>
-		<div class="slideshow">
-			<div class="Slides fade" >
-				<img src="images/ani1.jpg" class="img-1">
-			</div>
-			<div class="Slides fade">
-				<img src="images/christmas2018/1 (1).jpg" class="img-1">
-			</div>
-			<div class="Slides fade">
-				<img src="images/christmas2018/1 (11).jpg" class="img-1">
-			</div>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
+		<ul class="sidenav" id="sidenav">
+			<li class="closebutton" ><a href="javascript:void(0)" onClick="closeNav()">&times;</a></li>
+			<li class="sidenavli"><a href="index.html"> <img class="img-home" src="images/home.png" alt="home">Home</a></li>
+			<li class="sidenavli"><a href="admission.html"> Admissions</a></li>
+			<li class="sidenavli" >
+				<a href="events.html" >Events</a>
+			</li>
+			<li class="sidenavli" >
+				<a href="activities.html" >Activities</a>
+			</li>
+			<li class="sidenavli">
+				<a href="homework.html">Home Work</a>
+			</li>
+			<li class="sidenavli"  ><a href="contactus.html">Contact Us</a></li>
+			<li  class="sidenavli"><a href="aboutus.html">About us</a></li>
+			<li  class="sidenavli"><a href="javascript:void(0)"  data-toggle="tooltip"  title="Summer:9:00a.m to 12:00noon Winter:10:00a.m to 1:00p.m" data-trigger="click" >Timings</a></li>
+		</ul>
+		<div class="container mt-3 bo">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <ul class="carousel-indicators" >
+				<li data-target="#myCarousel" data-slide-to="0" class="active" style="border-radius:100%;height:10px;width:10px;"></li>
+				<li data-target="#myCarousel" data-slide-to="1" style="border-radius:100%;height:10px;width:10px;"></li>
+				<li data-target="#myCarousel" data-slide-to="2" style="border-radius:100%;height:10px;width:10px;" ></li>
+				<li data-target="#myCarousel" data-slide-to="3" style="border-radius:100%;height:10px;width:10px;" ></li>
+				<li data-target="#myCarousel" data-slide-to="4" style="border-radius:100%;height:10px;width:10px;" ></li>
+			  </ul>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="images/christmas/main3.png" alt="Lohri" width="1100" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="images/main1.png" alt="Fun" width="1100" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="images/christmas/main.png" alt="Chritmas" width="1100" height="500">
+				  
+				</div>
+				<div class="carousel-item">
+					<img src="images/childrenday/main2.png" alt="Children Day" width="1100" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="images/Lohri/main4.png" alt="Lohri" width="1100" height="500">
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<span class="carousel-control-prev-icon" ></span>
+			  </a>
+			  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<span class="carousel-control-next-icon" ></span>
+			  </a>
+			</div>
+		</div>
+		<br>
 		<div class="facilities">
 			<center>
 			<div class="facilities-head">
@@ -301,59 +298,133 @@
 				</div> 
 			</div>
 		</div>
+		<br>
 		<div class="gallery">
 			<div style="background-color:white;width:24vw;">
 				<div class="gallery-heading">
 					Image Gallery:
 				</div>
 			</div>
-			<div style="height:100%;width:auto;align-items:center;display:flex;">
-				<center>
-					<img src="images/christmas2018/1 (1).jpg" id="gallery1" class="gallery-image">
-					<img src="images/christmas2018/1 (2).jpg" id="gallery2" class="gallery-image">
-					<img src="images/christmas2018/1 (3).jpg" id="gallery3" class="gallery-image">
-					<img src="images/christmas2018/1 (4).jpg" id="gallery4" class="gallery-image" style="padding-right:0px;">
-				</center>
+			<div class="gallery-container">
+				<div id="gallery-pre">
+					&#10094;
+				</div>
+				<div style="overflow:hidden;width:92%" >
+					<div class="gallery-slide" >
+							<img src="images/Lohri/(1).jpg" class="gallery-image" id="lastclone">
+							<img src="images/childrenday/(6).jpg" class="gallery-image" >
+							<img src="images/childrenday/(8).jpg" class="gallery-image">
+							<img src="images/childrenday/(10).jpg" class="gallery-image">
+							<img src="images/gurpurav/10.jpg" class="gallery-image">
+							<img src="images/Holi/1.jpg" class="gallery-image">
+							<img src="images/christmas/(5).jpg" class="gallery-image">
+							<img src="images/christmas/(8).jpg" class="gallery-image">
+							<img src="images/christmas/(15).jpg" class="gallery-image">
+							<img src="images/birthday/12.jpg" class="gallery-image">
+							<img src="images/independenceday/4.jpg" class="gallery-image">
+							<img src="images/Rangoli/2.jpg" class="gallery-image">
+							<img src="images/janamashtmi/2.jpg" class="gallery-image">
+							<img src="images/janamashtmi/3.jpg" class="gallery-image">
+							<img src="images/janamashtmi/7.jpg" class="gallery-image">
+							<img src="images/Teej/6.jpg" class="gallery-image">
+							<img src="images/Teej/5.jpg" class="gallery-image">
+							<img src="images/Teej/3.jpg" class="gallery-image">
+							<img src="images/playing/5.jpg" class="gallery-image">
+							<img src="images/playing/11.jpg" class="gallery-image">
+							<img src="images/playing/18.jpg" class="gallery-image">
+							<img src="images/Lohri/(9).jpg" class="gallery-image">
+							<img src="images/Lohri/(4).jpg" class="gallery-image">
+							<img src="images/Lohri/(1).jpg" class="gallery-image">
+							<img src="images/childrenday/(6).jpg" class="gallery-image" id="firstclone">
+							<img src="images/childrenday/(8).jpg" class="gallery-image">
+							<img src="images/childrenday/(10).jpg" class="gallery-image">
+							<img src="images/gurpurav/10.jpg" class="gallery-image">
+							<img src="images/Holi/1.jpg" class="gallery-image">
+					</div>
+				</div>
+				<div id="gallery-next" >
+					&#10095;
+				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="animation.js">
-		</script>
-		<script type="text/javascript" src="gallery.js">
-		</script>
-		<footer class="foot">
-			<center>
-				<div style="width:82%;dispaly:table">
-					<div style="line-height:200%;float:left;margin-left:2%;" class="content-span">
+		<div class="container-fuild foot">
+			<div class="container">
+				<div class="row">
+					<div  class="col-3" style="padding-left:2vw;line-height:200%;">
 						Follow Us On:<br>
-						&nbsp <a href="https://www.facebook.com/Jass5628/" class="fa fa-facebook"></a> &nbsp 
-						 <a href="#" class="fa fa-whatsapp"></a>
+						&nbsp <a href="https://www.facebook.com/Jass5628/" class="fa fa-facebook" style="color:white;text-decoration:none;"></a> &nbsp 
+						 <a href="#" class="fa fa-whatsapp" style="color:white;text-decoration:none;"></a>
 						<br>	
-						&nbsp <a href="#" class="fa fa-instagram"></a>
+						&nbsp <a href="#" class="fa fa-instagram" style="color:white;text-decoration:none;"></a>
 					</div>
-					<div style="line-height:140%;padding:0% 2% 0% 0%;"class="content-span">
+					<div class="col-3" style="padding-left:4vw;">
 						Address:<br>
 						Satjot Nagar<br>
 						Block:C<br>
 						Dhandra Road<br>
 						Ludhiana,Punjab
 					</div>
-					<div class="content-span">
+					<div class="col-6" style="word-wrap:break-word;padding-left:5.5vw;">
 						Contact Us On:<br>
-						<i style="font-size:2vw" class="fa fa-phone"></i>
+						<i class="fa fa-phone"></i>
 						9501181459<br>
 						Write Us On:<br>
 						<a href="mailto:angelplayparadise@gmail.com" style="text-decoration: none;color:white;">
-							<i style="font-size:1.8vw" class="fa">&#xf003;</i>AngelPlayParadise@gmail.com
+							<i style="font-size:1.8vw" class="fa" >&#xf003;</i>&nbsp AngelPlayParadise@gmail.com
 						</a>
 					</div>
-					<hr type="solid" width="100%">
-					<center>
-						<font style="font-size:1.7vw">
-							© Angel's Play Paradise.
-						</font>
-					</center>
 				</div>
-			</center>
-		</footer>
+				<div class="row">
+						<div class="col-12" style="text-align:center;font-size:1.7vw;">						
+							<hr type="solid" width="100%" color="white" style="height:1px;margin:1px;">
+									© Angel's Play Paradise.
+						</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="nav.js"> </script>
+		<script type="text/javascript" src="gallery.js"> </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $('[data-toggle="popover"]').popover();   
+			});
+			var headingsize;
+			resize();
+			function resize()
+			{	
+				const a=document.getElementById("main-head");
+				if (window.innerWidth<900)
+				{
+						a.className="col-12 ani";
+						document.getElementsByClassName("head-main")[0].style.padding="0px";
+				}
+				else
+				{
+					a.className="col-10 ani";
+					document.getElementsByClassName("head-main")[0].style.paddingLeft="20px";
+				}
+			}
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction()
+			{
+					headingsize=document.getElementsByClassName("jumbotron text-center heading")[0].clientHeight;
+					if (document.body.scrollTop >headingsize || document.documentElement.scrollTop >headingsize) 
+					{
+						document.getElementById("navbar").style.position= "fixed";
+						document.getElementById("navbar").style.top="0px";
+						document.getElementById("main").style.marginTop="40px";
+						document.getElementById("sidenav").style.top="30px";
+					}
+					else 
+					{
+						document.getElementById("navbar").style.position= "static";
+						document.getElementById("main").style.marginTop="0px";
+						document.getElementById("sidenav").style.top="unset";
+					}
+			}
+		</script>
 	</body>
 </html>
