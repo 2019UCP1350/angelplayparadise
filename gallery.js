@@ -19,7 +19,7 @@ function galleryresize()
 nextbtn.addEventListener('click',function(){gallerynext();});
 function gallerynext()
 {
-	if (counter>=galleryimage.length-4) return;
+	if (counter>=galleryimage.length-5) return;
 	galleryslide.style.transition="transform 0.7s ease-in-out";
 	counter++;
 	galleryslide.style.transform="translateX("+(-size*counter)+"px)";
